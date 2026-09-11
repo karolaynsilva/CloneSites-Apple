@@ -13,7 +13,7 @@
             <img src="assets/img/logo.png" alt="Apple" class="logo">
         </a>
 
-        <nav class="menu-desktop">
+        <nav class="menu-navegacao" id="menuNavegacao">
             <a href="#">Loja</a>
             <a href="#">Mac</a>
             <a href="#">iPad</a>
@@ -33,14 +33,191 @@
             <button class="botao-icone" aria-label="Sacola">
                 <span class="icone-sacola"></span>
             </button>
-            <button class="botao-menu" aria-label="Abrir menu">
+            <button class="botao-menu" id="btnMenu" aria-label="Abrir menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
     </div>
+</header>
 
+<section class="hero hero-event" style="margin-top: 44px;">
+    <img src="assets/img/appleevento.webp" alt="Evento Apple" class="hero-bg">
+    <div class="hero-content">
+      <h2>Surpreendente e brilhante.</h2>
+      <p>Assista à apresentação especial da Apple.<br>Hoje, às 14h (BRT).</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-light">Adicionar ao calendário</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <img src="assets/img/mac-mini.jpg" alt="Mac mini" class="hero-bg">
+    <div class="hero-content">
+      <h2>Mac mini</h2>
+      <h3>Agora com M6 e M5 Pro.</h3>
+      <p class="subtitle">Confira em breve a disponibilidade</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-blue">Saiba mais</a>
+        <a href="#" class="btn btn-outline">Ver preços</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero">
+    <img src="assets/img/mac-studio.jpg" alt="Mac Studio" class="hero-bg">
+    <div class="hero-content">
+      <h2>Mac Studio</h2>
+      <h3>Agora com M5 Max e M5 Ultra.</h3>
+      <p class="subtitle">Confira em breve a disponibilidade</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-blue">Saiba mais</a>
+        <a href="#" class="btn btn-outline">Ver preços</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid-container">
+
+    <div class="grid-card">
+      <img src="assets/img/iphones.jpg" alt="iPhone" class="card-bg">
+      <div class="card-content">
+        <h2>iPhone</h2>
+        <p>Conheça a nova geração do iPhone.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-blue">Saiba mais</a>
+          <a href="#" class="btn btn-outline">Comprar iPhone</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-card">
+      <img src="assets/img/macbookair.jpg" alt="MacBook Air" class="card-bg">
+      <div class="card-content">
+        <h2>MacBook Air</h2>
+        <p>Agora com a potência do M5.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-blue">Saiba mais</a>
+          <a href="#" class="btn btn-outline">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-card">
+      <img src="assets/img/ipadair.jpg" alt="iPad Air" class="card-bg">
+      <div class="card-content">
+        <h2>iPad <span>air</span></h2>
+        <p>Agora com a potência do M4.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-blue">Saiba mais</a>
+          <a href="#" class="btn btn-outline">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-card">
+      <img src="assets/img/macbookneo.jpg" alt="MacBook Neo" class="card-bg">
+      <div class="card-content">
+        <h2>MacBook Neo</h2>
+        <p>Um Mac incrível. Uma escolha inteligente.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-blue">Saiba mais</a>
+          <a href="#" class="btn btn-outline">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-card">
+      <img src="assets/img/watch.jpg" alt="Apple Watch Series 11" class="card-bg">
+      <div class="card-content">
+        <h2><i class="fa-brands fa-apple"></i> WATCH <span>SERIES 11</span></h2>
+        <p>O parceiro ideal para cuidar da sua saúde.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-blue">Saiba mais</a>
+          <a href="#" class="btn btn-outline">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-card">
+      <img src="assets/img/airpods.jpg" alt="AirPods Pro 3" class="card-bg">
+      <div class="card-content">
+        <h2>AirPods Pro 3</h2>
+        <p>O melhor Cancelamento Ativo de Ruído do mundo em fones intra-auriculares¹.</p>
+        <div class="cta-buttons">
+          <a href="#" class="btn btn-blue">Saiba mais</a>
+          <a href="#" class="btn btn-outline">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="tv-slider-wrapper">
+    <button class="slider-btn prev-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <div class="tv-slider" id="tvSlider">
+      <div class="tv-card">
+        <img src="assets/img/silo.jpg" alt="Silo">
+        <div class="tv-content">
+          <a href="#" class="btn btn-light">Assista agora</a>
+          <p><strong>Ficção científica</strong> • A verdade está no passado.</p>
+        </div>
+      </div>
+
+      <div class="tv-card">
+        <img src="assets/img/ruptura.jpg" alt="Ruptura">
+        <div class="tv-content">
+          <a href="#" class="btn btn-light">Assista agora</a>
+          <p><strong>Thriller</strong> • Descubra os segredos da Lumen.</p>
+        </div>
+      </div>
+
+      <div class="tv-card">
+        <img src="assets/img/Ted_lasco.jpg" alt="Ted Lasso">
+        <div class="tv-content">
+          <a href="#" class="btn btn-light">Assista agora</a>
+          <p><strong>Comédia</strong> • Otimismo acima de tudo.</p>
+        </div>
+      </div>
+
+      <div class="tv-card">
+        <img src="assets/img/materia_escura.jpg" alt="Matéria Escura">
+        <div class="tv-content">
+          <a href="#" class="btn btn-light">Assista agora</a>
+          <p><strong>Ficção científica</strong> • Infinitas realidades.</p>
+        </div>
+      </div>
+
+      <div class="tv-card">
+        <img src="assets/img/mulheres_de_azul.jpg" alt="Mulheres de Azul">
+        <div class="tv-content">
+          <a href="#" class="btn btn-light">Assista agora</a>
+          <p><strong>Drama</strong> • Inspirado em fatos reais.</p>
+        </div>
+      </div>
+
+      <div class="tv-card">
+        <img src="assets/img/o_segredo_widows_bay.jpg" alt="O Segredo de Widow's Bay">
+        <div class="tv-content">
+          <a href="#" class="btn btn-light">Assista agora</a>
+          <p><strong>Mistério</strong> • Toda cidade tem seus segredos.</p>
+        </div>
+      </div>
+
+      <div class="tv-card">
+        <img src="assets/img/Lucky.jpg" alt="Lucky">
+        <div class="tv-content">
+          <a href="#" class="btn btn-light">Assista agora</a>
+          <p><strong>Comédia</strong> • Assista em 4K HDR.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="slider-btn next-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+  </section>
 
   <footer class="footer">
     <div class="footer-content">
@@ -149,6 +326,6 @@
     </div>
   </footer>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
